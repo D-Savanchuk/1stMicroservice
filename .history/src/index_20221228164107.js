@@ -26,6 +26,7 @@ async function getLog(el){
             'Last': data['Meta Data']['3. Last Refreshed'],
             'Open': data['Time Series (5min)'][keys[0]]['1. open'],
             'Close': data['Time Series (5min)'][keys[0]]['4. close']});
+            console.log('final', finalArray);
 }
 
 
