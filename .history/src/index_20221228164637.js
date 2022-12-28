@@ -35,7 +35,7 @@ async function getLog(el){
         }
       };
 
-    async function sendQuery(){
+    async function sendQuiery(){
     const connection = await amqp.connect('amqp://rmuser:rmpassword@localhost:');    
     const channel = await connection.createChannel();    
     const queue = 'messages';
@@ -49,7 +49,7 @@ async function getLog(el){
 }
 
 async function launchInterval(){
-    setInterval(async ()=> {await sendQuery()}, 6000);
+    setInterval(async ()=> {await sendQuiery()}, 6000);
 }
 
 launchInterval();
