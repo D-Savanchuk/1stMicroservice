@@ -1,0 +1,4 @@
+list_queues
+rabbitmqctl list_queues
+rabbitmqadmin help subcommands
+exit
